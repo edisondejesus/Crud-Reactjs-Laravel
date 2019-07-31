@@ -28,4 +28,7 @@ Route::get('/api/guardar_personas/{nombre}/{apellido}','Persona@create');
 Route::get('/api/mostrar_persona/{id}','Persona@show');
 
 Route::get('/api/delete/{id}','Persona@destroy');
+
 Route::get('/api/buscar_persona/{nombre}','Persona@buscar_persona');
+
+Route::get('/api/actualizar/{nombre}/{apellido}/{id}','Persona@update');
